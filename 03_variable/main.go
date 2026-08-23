@@ -22,4 +22,11 @@ func main() {
 	var price float32
 	price = 12.5
 	fmt.Println(price)
+
+	// multiple variable
+	var(
+		name_ = "hello"
+		age_ = 12
+	)
+	fmt.Println(name_,age_)
 }
