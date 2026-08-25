@@ -20,4 +20,8 @@ func main() {
 	for i := range 40 {
 		fmt.Println(i)
 	}
+	
+	for i = 1; i <= 100; i++ {
+		fmt.Println(i)
+	}
 }

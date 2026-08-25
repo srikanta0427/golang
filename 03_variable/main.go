@@ -7,26 +7,29 @@ func main() {
 	name = "golang"
 	fmt.Println(name)
 
+
 	// infer
 	var name1 = "golang"
 	var isCorrect = true
-	fmt.Println(name1,isCorrect)
+	fmt.Println(name1, isCorrect)
 
 	var age int = 12
 	fmt.Println(age)
 
 	// shorthand syntax
-	value:=12
+	value := 12
 	fmt.Println(value)
+	a, b, c := 3, 3, 2
+	fmt.Println(a, b, c)
 
 	var price float32
 	price = 12.5
 	fmt.Println(price)
 
 	// multiple variable
-	var(
+	var (
 		name_ = "hello"
-		age_ = 12
+		age_  = 12
 	)
-	fmt.Println(name_,age_)
+	fmt.Println(name_, age_)
 }
