@@ -13,7 +13,6 @@ func main() {
 
 	// also
 	value := 12
-
 	pointValue := &value
 	*pointValue = 44
 	fmt.Println(*pointValue, value)
