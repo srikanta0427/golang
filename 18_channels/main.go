@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func processNum(msg chan string,) {
+func processNum(msg chan<- string) {
 	result := "some result"
 	time.Sleep(time.Second * 2)
 	msg <- result
@@ -14,7 +14,7 @@ func processNum(msg chan string,) {
 func main() {
 
 	msgChain := make(chan string)
-	go processNum(msgChain,)
+	go processNum(msgChain)
 	msg := <-msgChain
 	fmt.Println(msg)
 
