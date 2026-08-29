@@ -5,7 +5,7 @@ import (
 )
 
 func task1() string {
-	return "task 1 complete"
+	return "task 1 completed"
 }
 
 func task2() string {
@@ -15,7 +15,7 @@ func task2() string {
 func worker(ch chan string) {
 	ch <- task1()
 	ch <- task2()
-	ch <- "task 3 complete"
+	ch <- "task 3 completed"
 }
 
 func main() {
