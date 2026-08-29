@@ -17,7 +17,6 @@ func main() {
 	go processNum(msgChain)
 	msg := <-msgChain
 	fmt.Println(msg)
-
 	fmt.Println("work after receiving msg(chain)")
 
 }
