@@ -29,4 +29,7 @@ func main() {
 	fmt.Println("after work")
 	fmt.Println(<-ch)
 	fmt.Println(<-ch)
+
+	// this is important
+	close(ch)
 }
