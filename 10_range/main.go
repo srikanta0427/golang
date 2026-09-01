@@ -6,8 +6,8 @@ func main() {
 	nums := []int{3, 7, 2}
 
 	// here i is indices
-	for i, num := range nums {
-		fmt.Println(num, i)
+	for _, num := range nums {
+		fmt.Println(num)
 	}
 	// iterate map
 
@@ -23,5 +23,5 @@ func main() {
 	for i, s := range "golang" {
 		fmt.Println(i, string(s))
 	}
-	
+
 }
